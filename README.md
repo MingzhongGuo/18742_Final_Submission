@@ -7,7 +7,8 @@ Please refer to sniper http://snipersim.org/w/The_Sniper_Multi-Core_Simulator fo
 
 #Directory structure
 Sniper: Contains all the files needed for running sniper simulation. In sniper/binaries/ folder, there are all the precompiled and ready-to-execute binaries for all the benchmarks.
-	In sniper/inputs/ folder, there are all the input files all benchmarks. In sniper/results/ there are all the collected results for benckmards des, maxflow, sssp.
+	For the input files of the benchmarks, which are not uploaded due to github upload file size limitation, please download manully from https://zenodo.org/record/3563191.
+	In sniper/results/ there are all the collected results for benckmards des, maxflow, sssp.
 	All the other sub folders in Sniper are the original sniper distributed codes. In sniper/tools/, there are all sorts of python scripts here to analysis sim.out, for detailed
 	explanation on how to use them, please refer to sniper manual page: http://snipersim.org/documents/sniper-manual.pdf.
 

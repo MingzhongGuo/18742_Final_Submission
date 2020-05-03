@@ -1,0 +1,153 @@
+AFI PCI  Vendor ID: 0x1d0f, Device ID 0xf000
+opt --n_tiles=4 4
+active_tiles num:4
+Opening input file /home/centos/chronos-inputs/USA-road-d.USA.gr.sssp
+MAGIC_OP dead
+APP_ID 100 Pipelined:0
+4 tiles 16 cores
+Non rollback 0
+TQ Size 11 CQ Size 7
+L2 banks: 2 Ready list size: 16
+File 0x238f250
+File 0x238f250 size 754035136
+headers 0 dead 
+headers 1 16d6853 
+headers 2 37a18a0 
+headers 3 16d6870 
+headers 4 2dad0d0 
+headers 5 10 
+headers 6 9cf0210 
+headers 7 0 
+headers 8 b3c6a70 
+headers 9 0 
+headers 10 0 
+headers 11 0 
+headers 12 0 
+headers 13 0 
+headers 14 0 
+headers 15 0 
+Write input data: cycles from 555184862 638578639
+Loading code 0x238f010
+offset 80000000
+offset c0000000
+Loading code... Success
+PCI latency 131 cycles
+Spill Alloc 40000000 04000000
+PCI latency 130 cycles
+app 1
+APP_SSSP
+Starting Applicaton
+PCI latency 130 cycles
+mask ffff0030
+Waiting until app completes
+time_s 1.000000
+iters 623
+Tile 0 stats:
+STAT_N_UNTIED_ENQ             1999201
+STAT_N_TIED_ENQ_ACK          14437040
+STAT_N_TIED_ENQ_NACK                0
+STAT_N_DEQ_TASK              14731849
+STAT_N_SPLITTER_DEQ            234553
+STAT_N_DEQ_MISMATCH              9122
+STAT_N_CUT_TIES_MATCH        14403297
+STAT_N_CUT_TIES_MISMATCH        22846
+STAT_N_CUT_TIES_COM_ABO           450
+STAT_N_COMMIT_TIED              23297
+STAT_N_COMMIT_UNTIED         14554281
+STAT_N_COMMIT_MISMATCH              0
+STAT_N_ABORT_CHILD_DEQ           1601
+STAT_N_ABORT_CHILD_NOT_DEQ       9296
+STAT_N_ABORT_CHILD_MISMATCH         0
+STAT_N_ABORT_TASK              152726
+STAT_N_COAL_CHILD              234553
+STAT_N_OVERFLOW               1847766
+state:0   74666221    state:1    8302990    state:2    3983562    state:3          0    
+state:4          0    state:5          0    state:6          0    state:7          0    
+Heap enq: 16588967, deq+abort 14741145
+Tied_Enq :14437040, 14437041
+Cum Tasks:   1633307 heap_util:   1472823
+avg Tasks:1229.88 heap_util:1109.03
+heap     enq: 10902116  deq:  9002684  replace:  5009905
+heap deq_max:   936457 +enq:  1023732 +replace:   962975
+Total heap ops: 27837869
+cycles deq_valid: 61870656
+no_task  : 828550323 cq_stall:   7836974 task_issued   :  14886120
+no_thread:  46000140 cr_full :        93 task_not_taken:  14907587
+cr_full_all  40658784
+Completed, flushing cache..
+CQ stats 
+state:0   70630703    state:1     713412    state:2     480449    state:3     155946    
+state:4   14950902    state:5          0    state:6          0    state:7          0    
+aborts: resource:217493, gvt:0
+cycles in aborts: resource:1281394, gvt:0
+stall cycles: cq_full: 14604967, cc_full: 32966777, no_task:  8437394
+conflict none:0 bypass:0 miss:0 real:0
+CQ occ (         0   70553374) , 103.762836
+num tasks Tile:0   14731849 Total:  58927396
+Tile:0 L2 bank 0
+	L2 Read  hits: 33746689 misses:  2125028 
+	L2 Write hits:  3983484 misses:    41641 
+	L2 Evictions :   345858 
+	L2 hit-rate 94.57%
+	retry:  stall:     2168, not_empty:  1357414, count:   466004
+	stall_in     :     5751
+Tile:0 L2 bank 1
+	L2 Read  hits: 33840503 misses:  2124251 
+	L2 Write hits:  4286913 misses:    41704 
+	L2 Evictions :   346284 
+	L2 hit-rate 94.62%
+	retry:  stall:     2271, not_empty:  1366519, count:   457692
+	stall_in     :     2449
+Tile:1 L2 bank 0
+	L2 Read  hits: 34021138 misses:  2123276 
+	L2 Write hits:  4237312 misses:    39957 
+	L2 Evictions :   342972 
+	L2 hit-rate 94.65%
+	retry:  stall:     2193, not_empty:  1332291, count:   441585
+	stall_in     :     5773
+Tile:1 L2 bank 1
+	L2 Read  hits: 33594197 misses:  2121076 
+	L2 Write hits:  4040576 misses:    39992 
+	L2 Evictions :   343054 
+	L2 hit-rate 94.57%
+	retry:  stall:     1876, not_empty:  1312304, count:   452201
+	stall_in     :     2127
+Tile:2 L2 bank 0
+	L2 Read  hits: 34014864 misses:  2123329 
+	L2 Write hits:  4234028 misses:    40386 
+	L2 Evictions :   344530 
+	L2 hit-rate 94.65%
+	retry:  stall:     2493, not_empty:  1333078, count:   440318
+	stall_in     :     6002
+Tile:2 L2 bank 1
+	L2 Read  hits: 33608631 misses:  2124510 
+	L2 Write hits:  4037731 misses:    40268 
+	L2 Evictions :   343821 
+	L2 hit-rate 94.56%
+	retry:  stall:     2239, not_empty:  1313626, count:   456123
+	stall_in     :     2278
+Tile:3 L2 bank 0
+	L2 Read  hits: 33762191 misses:  2125994 
+	L2 Write hits:  3985732 misses:    40108 
+	L2 Evictions :   344219 
+	L2 hit-rate 94.57%
+	retry:  stall:     2259, not_empty:  1332239, count:   458542
+	stall_in     :     5453
+Tile:3 L2 bank 1
+	L2 Read  hits: 33851432 misses:  2125114 
+	L2 Write hits:  4288176 misses:    40195 
+	L2 Evictions :   344710 
+	L2 hit-rate 94.63%
+	retry:  stall:     2259, not_empty:  1340374, count:   445564
+	stall_in     :     2231
+Task Unit Ops 0, num_edges 58333344
+FPGA cycles 87033395  (696.267160 ms) (5.907839 cycles/task/tile)
+Read BW    1591.74 MB/s
+Write BW    253.28 MB/s
+L2 Tag contention 194.27%
+L2 accesses per task 21.78
+Task Unit contention  0.00%
+Flush completed, reading results..
+DDR log size 0 gvt 0
+vid:23947346 dist:23228284, ref:23228284, MATCH, num_errors: 0
+Total Errors 0 / 23947347

@@ -1,0 +1,121 @@
+AFI PCI  Vendor ID: 0x1d0f, Device ID 0xf000
+opt --n_tiles=1 1
+active_tiles num:1
+Opening input file /home/centos/chronos-inputs/USA-road-d.USA.gr.sssp
+MAGIC_OP dead
+APP_ID 100 Pipelined:0
+4 tiles 16 cores
+Non rollback 0
+TQ Size 11 CQ Size 7
+L2 banks: 2 Ready list size: 16
+File 0x951250
+File 0x951250 size 754035136
+headers 0 dead 
+headers 1 16d6853 
+headers 2 37a18a0 
+headers 3 16d6870 
+headers 4 2dad0d0 
+headers 5 10 
+headers 6 9cf0210 
+headers 7 0 
+headers 8 b3c6a70 
+headers 9 0 
+headers 10 0 
+headers 11 0 
+headers 12 0 
+headers 13 0 
+headers 14 0 
+headers 15 0 
+Write input data: cycles from 1676385634 1759808419
+Loading code 0x951010
+offset 80000000
+offset c0000000
+Loading code... Success
+PCI latency 132 cycles
+Spill Alloc 40000000 04000000
+PCI latency 131 cycles
+app 1
+APP_SSSP
+Starting Applicaton
+PCI latency 130 cycles
+mask ffff0030
+Waiting until app completes
+time_s 5.000000
+iters 4637
+Tile 0 stats:
+STAT_N_UNTIED_ENQ            48954731
+STAT_N_TIED_ENQ_ACK          56111710
+STAT_N_TIED_ENQ_NACK                0
+STAT_N_DEQ_TASK              63678915
+STAT_N_SPLITTER_DEQ           5709036
+STAT_N_DEQ_MISMATCH            403875
+STAT_N_CUT_TIES_MATCH        54356720
+STAT_N_CUT_TIES_MISMATCH         7413
+STAT_N_CUT_TIES_COM_ABO           173
+STAT_N_COMMIT_TIED               7588
+STAT_N_COMMIT_UNTIED         58325694
+STAT_N_COMMIT_MISMATCH              0
+STAT_N_ABORT_CHILD_DEQ            258
+STAT_N_ABORT_CHILD_NOT_DEQ    1747319
+STAT_N_ABORT_CHILD_MISMATCH         0
+STAT_N_ABORT_TASK             5345382
+STAT_N_COAL_CHILD             5709036
+STAT_N_OVERFLOW              44985582
+state:0  358629429    state:1  200637214    state:2   95657188    state:3          0    
+state:4          0    state:5          0    state:6          0    state:7          0    
+Heap enq: 110411823, deq+abort 65426234
+Tied_Enq :56111710, 56111712
+Cum Tasks:  15082877 heap_util:  13724512
+avg Tasks:1509.07 heap_util:1373.16
+heap     enq: 85956335  deq: 41167582  replace: 15135873
+heap deq_max: 31300378 +enq: 26043900 +replace: 13488375
+Total heap ops: 213092443
+cycles deq_valid:345526285
+no_task  : -2142792733 cq_stall: 181013510 task_issued   :  69024548
+no_thread: 150046890 cr_full :        18 task_not_taken:  50137580
+cr_full_all 106490464
+Completed, flushing cache..
+CQ stats 
+state:0  513543317    state:1   34723411    state:2   20774334    state:3    5356183    
+state:4   80505244    state:5          0    state:6          0    state:7          0    
+aborts: resource:16826076, gvt:0
+cycles in aborts: resource:76411215, gvt:0
+stall cycles: cq_full: 158443294, cc_full: 83173898, no_task: 208941569
+conflict none:0 bypass:0 miss:0 real:0
+CQ occ (         0  569232458) , 111.235715
+num tasks Tile:0   63678915 Total:  63678915
+Tile:0 L2 bank 0
+	L2 Read  hits:145425485 misses: 21158774 
+	L2 Write hits: 34358574 misses:  6429558 
+	L2 Evictions : 11433276 
+	L2 hit-rate 86.70%
+	retry:  stall:   516142, not_empty: 88324870, count: 39545815
+	stall_in     :  1204552
+Tile:0 L2 bank 1
+	L2 Read  hits:141435034 misses: 21149691 
+	L2 Write hits: 37405829 misses:  6429615 
+	L2 Evictions : 11431304 
+	L2 hit-rate 86.64%
+	retry:  stall:   508362, not_empty: 88225125, count: 39656108
+	stall_in     :   783154
+Task Unit Ops 0, num_edges 58333344
+FPGA cycles 655021226  (5240.169808 ms) (10.286313 cycles/task/tile)
+Read BW     673.78 MB/s
+Write BW    279.25 MB/s
+L2 Tag contention 35.80%
+L2 accesses per task  6.50
+Task Unit contention  0.00%
+Flush completed, reading results..
+DDR log size 0 gvt 0
+vid:5521383 dist:14371104, ref:14366816, FAIL, num_errors: 1
+vid:5521393 dist:14367260, ref:14358737, FAIL, num_errors: 2
+vid:5521414 dist:14360197, ref:14350967, FAIL, num_errors: 3
+vid:6569973 dist:14363295, ref:14354772, FAIL, num_errors: 4
+vid:6570002 dist:14368630, ref:14360107, FAIL, num_errors: 5
+vid:7369408 dist:   -1, ref:3704298, FAIL, num_errors: 6
+vid:7369409 dist:   -1, ref:3689173, FAIL, num_errors: 7
+vid:7369410 dist:   -1, ref:3748238, FAIL, num_errors: 8
+vid:7369411 dist:   -1, ref:3770929, FAIL, num_errors: 9
+vid:23947346 dist:23228284, ref:23228284, MATCH, num_errors:80659
+Total Errors 80659 / 23947347
+Earliest Fail 0 (0) / 100000000

@@ -1,0 +1,204 @@
+AFI PCI  Vendor ID: 0x1d0f, Device ID 0xf000
+opt --n_tiles=2 2
+active_tiles num:2
+Opening input file /home/centos/chronos-inputs/csaArray32.net.csr
+MAGIC_OP 30303030
+APP_ID 100 Pipelined:0
+4 tiles 16 cores
+Non rollback 0
+TQ Size 11 CQ Size 7
+L2 banks: 2 Ready list size: 16
+File 0x1c35250
+File Len 5782400
+Write input data: cycles from -2002177127 -2001535293
+Loading code 0x1c35010
+offset 80000000
+offset c0000000
+Loading code... Success
+PCI latency 130 cycles
+Spill Alloc 40000000 04000000
+PCI latency 130 cycles
+app 2
+APP_DES
+Enquing initial task 0
+Enquing initial task 1
+Enquing initial task 2
+Enquing initial task 3
+Enquing initial task 4
+Enquing initial task 5
+Enquing initial task 6
+Enquing initial task 7
+Enquing initial task 8
+Enquing initial task 9
+Enquing initial task 10
+Enquing initial task 11
+Enquing initial task 12
+Enquing initial task 13
+Enquing initial task 14
+Enquing initial task 15
+Enquing initial task 16
+Enquing initial task 17
+Enquing initial task 18
+Enquing initial task 19
+Enquing initial task 20
+Enquing initial task 21
+Enquing initial task 22
+Enquing initial task 23
+Enquing initial task 24
+Enquing initial task 25
+Enquing initial task 26
+Enquing initial task 27
+Enquing initial task 28
+Enquing initial task 29
+Enquing initial task 30
+Enquing initial task 31
+Enquing initial task 32
+Enquing initial task 33
+Enquing initial task 34
+Enquing initial task 35
+Enquing initial task 36
+Enquing initial task 37
+Enquing initial task 38
+Enquing initial task 39
+Enquing initial task 40
+Enquing initial task 41
+Enquing initial task 42
+Enquing initial task 43
+Enquing initial task 44
+Enquing initial task 45
+Enquing initial task 46
+Enquing initial task 47
+Enquing initial task 48
+Enquing initial task 49
+Enquing initial task 50
+Enquing initial task 51
+Enquing initial task 52
+Enquing initial task 53
+Enquing initial task 54
+Enquing initial task 55
+Enquing initial task 56
+Enquing initial task 57
+Enquing initial task 58
+Enquing initial task 59
+Enquing initial task 60
+Enquing initial task 61
+Enquing initial task 62
+Enquing initial task 63
+Enquing initial task 64
+Enquing initial task 65
+Enquing initial task 66
+Enquing initial task 67
+Enquing initial task 68
+Enquing initial task 69
+Enquing initial task 70
+Enquing initial task 71
+Enquing initial task 72
+Enquing initial task 73
+Enquing initial task 74
+Enquing initial task 75
+Enquing initial task 76
+Enquing initial task 77
+Enquing initial task 78
+Enquing initial task 79
+Enquing initial task 80
+Enquing initial task 81
+Enquing initial task 82
+Enquing initial task 83
+Enquing initial task 84
+Enquing initial task 85
+Enquing initial task 86
+Enquing initial task 87
+Enquing initial task 88
+Enquing initial task 89
+Enquing initial task 90
+Enquing initial task 91
+Enquing initial task 92
+Enquing initial task 93
+Enquing initial task 94
+Enquing initial task 95
+Starting Applicaton
+PCI latency 135 cycles
+mask ffff0030
+Waiting until app completes
+time_s 0.000000
+iters 39
+Tile 0 stats:
+STAT_N_UNTIED_ENQ               11112
+STAT_N_TIED_ENQ_ACK            585308
+STAT_N_TIED_ENQ_NACK                0
+STAT_N_DEQ_TASK                606290
+STAT_N_SPLITTER_DEQ                 0
+STAT_N_DEQ_MISMATCH              6701
+STAT_N_CUT_TIES_MATCH          464500
+STAT_N_CUT_TIES_MISMATCH       111388
+STAT_N_CUT_TIES_COM_ABO          2171
+STAT_N_COMMIT_TIED             113559
+STAT_N_COMMIT_UNTIED           473441
+STAT_N_COMMIT_MISMATCH              0
+STAT_N_ABORT_CHILD_DEQ           2742
+STAT_N_ABORT_CHILD_NOT_DEQ       6678
+STAT_N_ABORT_CHILD_MISMATCH         0
+STAT_N_ABORT_TASK               16591
+STAT_N_COAL_CHILD                   0
+STAT_N_OVERFLOW                     0
+state:0    5398685    state:1          0    state:2          0    state:3          0    
+state:4          0    state:5          0    state:6          0    state:7          0    
+Heap enq: 613011, deq+abort 612968
+Tied_Enq :585308, 585308
+Cum Tasks:     26673 heap_util:     20594
+avg Tasks:318.33 heap_util:245.78
+heap     enq:   477618  deq:   477618  replace:   135393
+heap deq_max:        0 +enq:        0 +replace:        0
+Total heap ops: 1090629
+cycles deq_valid:  4262324
+no_task  : -1814065440 cq_stall:     38276 task_issued   :    625580
+no_thread:   3250289 cr_full :       181 task_not_taken:   1436821
+cr_full_all   4280106
+Completed, flushing cache..
+CQ stats 
+state:0    4619943    state:1      76727    state:2      26658    state:3      19744    
+state:4     627018    state:5          0    state:6          0    state:7          0    
+aborts: resource:11785, gvt:0
+cycles in aborts: resource:52039, gvt:0
+stall cycles: cq_full:   114459, cc_full:  3528990, no_task:   475625
+conflict none:0 bypass:0 miss:0 real:0
+CQ occ (         0    3333916) , 77.712160
+num tasks Tile:0     606290 Total:   1212580
+Tile:0 L2 bank 0
+	L2 Read  hits:  2683925 misses:     1564 
+	L2 Write hits:   319082 misses:        1 
+	L2 Evictions :       11 
+	L2 hit-rate 99.95%
+	retry:  stall:      265, not_empty:     1278, count:      773
+	stall_in     :        5
+Tile:0 L2 bank 1
+	L2 Read  hits:  1140869 misses:     1564 
+	L2 Write hits:   336925 misses:        1 
+	L2 Evictions :       12 
+	L2 hit-rate 99.89%
+	retry:  stall:      135, not_empty:     1091, count:      795
+	stall_in     :        7
+Tile:1 L2 bank 0
+	L2 Read  hits:  2485094 misses:     1564 
+	L2 Write hits:   301511 misses:        1 
+	L2 Evictions :       11 
+	L2 hit-rate 99.94%
+	retry:  stall:      191, not_empty:     1080, count:      691
+	stall_in     :        3
+Tile:1 L2 bank 1
+	L2 Read  hits:  1350759 misses:     1565 
+	L2 Write hits:   350117 misses:        1 
+	L2 Evictions :       12 
+	L2 hit-rate 99.91%
+	retry:  stall:       85, not_empty:     1081, count:      744
+	stall_in     :        7
+Task Unit Ops 0, num_edges 1056
+FPGA cycles 5491306  (43.930448 ms) (9.057227 cycles/task/tile)
+Read BW       9.12 MB/s
+Write BW      0.07 MB/s
+L2 Tag contention 81.77%
+L2 accesses per task 14.80
+Task Unit contention  0.00%
+Flush completed, reading results..
+DDR log size 0 gvt 0
+vid:581 dist:    1, ref:    1, MATCH, num_errors: 0 / 64

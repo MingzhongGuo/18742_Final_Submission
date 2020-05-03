@@ -1,0 +1,124 @@
+AFI PCI  Vendor ID: 0x1d0f, Device ID 0xf000
+opt --n_tiles=2 2
+active_tiles num:2
+Opening input file /home/centos/chronos-inputs/genrmf_wide_37_6_1_10000_0.in.flow
+MAGIC_OP dead
+APP_ID 100 Pipelined:0
+4 tiles 16 cores
+Non rollback 0
+TQ Size 11 CQ Size 7
+L2 banks: 2 Ready list size: 16
+File 0x212a250
+File 0x212a250 size 956864
+headers 0 dead 
+headers 1 2016 
+headers 2 b25a 
+headers 3 20170 
+headers 4 22190 
+headers 5 10 
+headers 6 38650 
+headers 7 0 
+headers 8 3a670 
+headers 9 2015 
+headers 10 8 
+headers 11 ff00 
+headers 12 ffff0000 
+headers 13 1 
+headers 14 0 
+headers 15 0 
+Write input data: cycles from 707105350 707214899
+Loading code 0x212a010
+offset 80000000
+offset c0000000
+Loading code... Success
+PCI latency 131 cycles
+Spill Alloc 40000000 04000000
+PCI latency 131 cycles
+app 5
+APP_MAXFLOW
+Starting Applicaton
+PCI latency 130 cycles
+mask ffff0030
+Waiting until app completes
+time_s 0.000000
+iters 185
+Tile 0 stats:
+STAT_N_UNTIED_ENQ              586677
+STAT_N_TIED_ENQ_ACK           2565780
+STAT_N_TIED_ENQ_NACK                0
+STAT_N_DEQ_TASK               2586846
+STAT_N_SPLITTER_DEQ             67899
+STAT_N_DEQ_MISMATCH             64855
+STAT_N_CUT_TIES_MATCH         1974772
+STAT_N_CUT_TIES_MISMATCH       493015
+STAT_N_CUT_TIES_COM_ABO          9382
+STAT_N_COMMIT_TIED             502397
+STAT_N_COMMIT_UNTIED          2017840
+STAT_N_COMMIT_MISMATCH              0
+STAT_N_ABORT_CHILD_DEQ           8295
+STAT_N_ABORT_CHILD_NOT_DEQ      89698
+STAT_N_ABORT_CHILD_MISMATCH         0
+STAT_N_ABORT_TASK               58851
+STAT_N_COAL_CHILD               67899
+STAT_N_OVERFLOW                534227
+state:0   21154958    state:1    3493677    state:2    1145318    state:3          0    
+state:4          0    state:5          0    state:6          0    state:7          0    
+Heap enq: 3211308, deq+abort 2676544
+Tied_Enq :2565780, 2565780
+Cum Tasks:    297831 heap_util:    277786
+avg Tasks:754.15 heap_util:703.40
+heap     enq:  2560497  deq:  1868109  replace:   604527
+heap deq_max:   444943 +enq:   455768 +replace:   247445
+Total heap ops: 6181289
+cycles deq_valid: 18380362
+no_task  : 899858845 cq_stall:   1255620 task_issued   :   2653455
+no_thread:  10831054 cr_full :   4436812 task_not_taken:   3666798
+cr_full_all  19114533
+Completed, flushing cache..
+CQ stats 
+state:0   15540134    state:1     574879    state:2     129081    state:3      73967    
+state:4    9454374    state:5          0    state:6          0    state:7          0    
+aborts: resource:172643, gvt:0
+cycles in aborts: resource:801836, gvt:0
+stall cycles: cq_full:  1173932, cc_full:  9122637, no_task:  3736123
+conflict none:0 bypass:0 miss:0 real:0
+CQ occ (         0   19029676) , 94.113383
+num tasks Tile:0    2586846 Total:   5173692
+Tile:0 L2 bank 0
+	L2 Read  hits: 13460795 misses:    10613 
+	L2 Write hits:  1161553 misses:     5306 
+	L2 Evictions :     9057 
+	L2 hit-rate 99.89%
+	retry:  stall:      727, not_empty:    67610, count:    13181
+	stall_in     :     3286
+Tile:0 L2 bank 1
+	L2 Read  hits: 10161238 misses:    11125 
+	L2 Write hits:  1400187 misses:    13096 
+	L2 Evictions :    17310 
+	L2 hit-rate 99.79%
+	retry:  stall:      237, not_empty:    90812, count:    28856
+	stall_in     :     3038
+Tile:1 L2 bank 0
+	L2 Read  hits: 13459302 misses:    26237 
+	L2 Write hits:  1151877 misses:    16776 
+	L2 Evictions :    25165 
+	L2 hit-rate 99.71%
+	retry:  stall:     1238, not_empty:   162375, count:    32121
+	stall_in     :     3097
+Tile:1 L2 bank 1
+	L2 Read  hits: 10063568 misses:    25404 
+	L2 Write hits:  1243872 misses:    10603 
+	L2 Evictions :    18432 
+	L2 hit-rate 99.68%
+	retry:  stall:      421, not_empty:   133503, count:    39841
+	stall_in     :     2600
+Task Unit Ops 0, num_edges 45658
+FPGA cycles 25881532  (207.052256 ms) (10.005053 cycles/task/tile)
+Read BW      36.83 MB/s
+Write BW     21.63 MB/s
+L2 Tag contention 101.12%
+L2 accesses per task 20.19
+Task Unit contention  0.00%
+Flush completed, reading results..
+DDR log size 0 gvt 0
+node:8213 excess:5261153 height:  0

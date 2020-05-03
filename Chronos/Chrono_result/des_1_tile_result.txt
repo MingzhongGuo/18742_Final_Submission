@@ -1,0 +1,190 @@
+AFI PCI  Vendor ID: 0x1d0f, Device ID 0xf000
+opt --n_tiles=1 1
+active_tiles num:1
+Opening input file /home/centos/chronos-inputs/csaArray32.net.csr
+MAGIC_OP 30303030
+APP_ID 100 Pipelined:0
+4 tiles 16 cores
+Non rollback 0
+TQ Size 11 CQ Size 7
+L2 banks: 2 Ready list size: 16
+File 0x1028250
+File Len 5782400
+Write input data: cycles from 1953865480 1954512030
+Loading code 0x1028010
+offset 80000000
+offset c0000000
+Loading code... Success
+PCI latency 132 cycles
+Spill Alloc 40000000 04000000
+PCI latency 131 cycles
+app 2
+APP_DES
+Enquing initial task 0
+Enquing initial task 1
+Enquing initial task 2
+Enquing initial task 3
+Enquing initial task 4
+Enquing initial task 5
+Enquing initial task 6
+Enquing initial task 7
+Enquing initial task 8
+Enquing initial task 9
+Enquing initial task 10
+Enquing initial task 11
+Enquing initial task 12
+Enquing initial task 13
+Enquing initial task 14
+Enquing initial task 15
+Enquing initial task 16
+Enquing initial task 17
+Enquing initial task 18
+Enquing initial task 19
+Enquing initial task 20
+Enquing initial task 21
+Enquing initial task 22
+Enquing initial task 23
+Enquing initial task 24
+Enquing initial task 25
+Enquing initial task 26
+Enquing initial task 27
+Enquing initial task 28
+Enquing initial task 29
+Enquing initial task 30
+Enquing initial task 31
+Enquing initial task 32
+Enquing initial task 33
+Enquing initial task 34
+Enquing initial task 35
+Enquing initial task 36
+Enquing initial task 37
+Enquing initial task 38
+Enquing initial task 39
+Enquing initial task 40
+Enquing initial task 41
+Enquing initial task 42
+Enquing initial task 43
+Enquing initial task 44
+Enquing initial task 45
+Enquing initial task 46
+Enquing initial task 47
+Enquing initial task 48
+Enquing initial task 49
+Enquing initial task 50
+Enquing initial task 51
+Enquing initial task 52
+Enquing initial task 53
+Enquing initial task 54
+Enquing initial task 55
+Enquing initial task 56
+Enquing initial task 57
+Enquing initial task 58
+Enquing initial task 59
+Enquing initial task 60
+Enquing initial task 61
+Enquing initial task 62
+Enquing initial task 63
+Enquing initial task 64
+Enquing initial task 65
+Enquing initial task 66
+Enquing initial task 67
+Enquing initial task 68
+Enquing initial task 69
+Enquing initial task 70
+Enquing initial task 71
+Enquing initial task 72
+Enquing initial task 73
+Enquing initial task 74
+Enquing initial task 75
+Enquing initial task 76
+Enquing initial task 77
+Enquing initial task 78
+Enquing initial task 79
+Enquing initial task 80
+Enquing initial task 81
+Enquing initial task 82
+Enquing initial task 83
+Enquing initial task 84
+Enquing initial task 85
+Enquing initial task 86
+Enquing initial task 87
+Enquing initial task 88
+Enquing initial task 89
+Enquing initial task 90
+Enquing initial task 91
+Enquing initial task 92
+Enquing initial task 93
+Enquing initial task 94
+Enquing initial task 95
+Starting Applicaton
+PCI latency 131 cycles
+mask ffff0030
+Waiting until app completes
+time_s 1.000000
+iters 75
+Tile 0 stats:
+STAT_N_UNTIED_ENQ               66093
+STAT_N_TIED_ENQ_ACK           1109004
+STAT_N_TIED_ENQ_NACK                0
+STAT_N_DEQ_TASK               1177334
+STAT_N_SPLITTER_DEQ                 0
+STAT_N_DEQ_MISMATCH                91
+STAT_N_CUT_TIES_MATCH         1051855
+STAT_N_CUT_TIES_MISMATCH        57042
+STAT_N_CUT_TIES_COM_ABO          1218
+STAT_N_COMMIT_TIED              58260
+STAT_N_COMMIT_UNTIED          1116730
+STAT_N_COMMIT_MISMATCH              0
+STAT_N_ABORT_CHILD_DEQ             16
+STAT_N_ABORT_CHILD_NOT_DEQ         91
+STAT_N_ABORT_CHILD_MISMATCH         0
+STAT_N_ABORT_TASK                2328
+STAT_N_COAL_CHILD                   0
+STAT_N_OVERFLOW                     0
+state:0   10436849    state:1          0    state:2          0    state:3          0    
+state:4          0    state:5          0    state:6          0    state:7          0    
+Heap enq: 1177425, deq+abort 1177425
+Tied_Enq :1109004, 1109004
+Cum Tasks:     85531 heap_util:     77137
+avg Tasks:533.38 heap_util:481.04
+heap     enq:   919910  deq:   919910  replace:   257515
+heap deq_max:        0 +enq:        0 +replace:        0
+Total heap ops: 2097335
+cycles deq_valid:  8257884
+no_task  : 2146453893 cq_stall:         0 task_issued   :   1179678
+no_thread:   6827013 cr_full :         0 task_not_taken:   2399636
+cr_full_all   8673465
+Completed, flushing cache..
+CQ stats 
+state:0    9133570    state:1      21801    state:2       3563    state:3       2355    
+state:4    1249071    state:5          0    state:6          0    state:7          0    
+aborts: resource:4, gvt:0
+cycles in aborts: resource:23, gvt:0
+stall cycles: cq_full:       69, cc_full:  7195858, no_task:   966233
+conflict none:0 bypass:0 miss:0 real:0
+CQ occ (         0    4327748) , 52.711701
+num tasks Tile:0    1177334 Total:   1177334
+Tile:0 L2 bank 0
+	L2 Read  hits:  5028865 misses:     3097 
+	L2 Write hits:   559513 misses:        1 
+	L2 Evictions :       21 
+	L2 hit-rate 99.94%
+	retry:  stall:      170, not_empty:     1324, count:      791
+	stall_in     :        0
+Tile:0 L2 bank 1
+	L2 Read  hits:  2445799 misses:     3096 
+	L2 Write hits:   612908 misses:        1 
+	L2 Evictions :       23 
+	L2 hit-rate 99.90%
+	retry:  stall:       81, not_empty:     1115, count:      739
+	stall_in     :        0
+Task Unit Ops 0, num_edges 1056
+FPGA cycles 10509085  (84.072680 ms) (8.926171 cycles/task/tile)
+Read BW       4.72 MB/s
+Write BW      0.03 MB/s
+L2 Tag contention 41.20%
+L2 accesses per task  7.35
+Task Unit contention  0.00%
+Flush completed, reading results..
+DDR log size 0 gvt 0
+vid:581 dist:    1, ref:    1, MATCH, num_errors: 0 / 64
